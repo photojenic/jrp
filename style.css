@@ -4,12 +4,26 @@ body {
     background-color: rgb(237, 239, 241);
 }
 
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+p,h2 {
+    color: gray;
+}
+
 /* Navigation */
 
 .site-header {
     background-color: lightseagreen;
-    border-bottom: 5px solid #f2ff00;
-    padding: 10px 30px;
+    border-bottom: 5px solid lightgray;
+    padding: 0px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,24 +32,15 @@ body {
 .nav-menu {
     display: flex;
     height: 90px;
-    justify-content: flex-end;
     font-size: 1.25rem;
     padding: 15px 0;
 }
 
-.main-nav p {
-    color: #fff;
-    padding-left: 15px;
-  }
-
-/* section {
-    display: flex;
-} */
 
 .nav-menu-item {
-    font-size: 20px;
     margin: 10px;
     color: #FFFFFF;
+    margin-top: 20px;
 }
 
 #hamburger-icon {
@@ -47,7 +52,7 @@ body {
 /* Main content */
 
 main {
-    background-color: magenta;
+    background-color: whitesmoke;
     padding: 20px;
 }
 
