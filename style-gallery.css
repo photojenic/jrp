@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+    /* padding: 20px; */
+    font-family: Arial;
+  }
+
+/* Navigation */
+
+nav {
+    display: flex;
+    height: 50px;
+    background-color: lightseagreen;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+section {
+   display: flex;
+  }
+
+div {
+    font-size: 20px;
+    margin: 10px;
+    color: #FFFFFF;
+  }
+
+  /* Main area */
+
+  main {
+    background-color: magenta; 
+    padding: 20px;
+   }
+
+  /* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 10px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+
+  /* Footer Area */
+
+footer {
+    background-color: teal;
+   }
+ 
+   .flex-ctr {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+ 
+   nav, footer {
+     grid-column: span 2;
+   }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
