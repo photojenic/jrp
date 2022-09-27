@@ -29,11 +29,11 @@ a {
     text-decoration: none;
 } */
 
-p, h2 {
+p, h1, h2 {
     color: gray;
 }
 
-h2 {
+h1, h2 {
     padding: 8px 0;
 }
 
@@ -192,7 +192,7 @@ img {
     gap: 10px;
 }
 
-.main-one, .main-two, .main-three, .main-four {
+.main-one, .main-two, .main-three {
     background-color: gray;
     padding: 5px;
 }
