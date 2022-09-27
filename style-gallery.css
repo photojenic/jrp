@@ -168,20 +168,21 @@ makes the two columns stack on top of each other instead of next to each other *
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 70px;
+    top: 90px;
     gap: 0;
     flex-direction: column;
-    background-color: lightseagreen;
+    background-color: lightgrey;
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    z-index: 2000;
   }
 
   .nav-item {
     margin: 16px 0;
   }
 
-  .nav-menu-active {
+  .nav-menu.active {
     left: 0;
   }
 }
@@ -214,20 +215,21 @@ makes a two column-layout instead of four columns */
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 70px;
+    top: 90px;
     gap: 0;
     flex-direction: column;
-    background-color: lightseagreen;
+    background-color: lightgrey;
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    z-index: 2000;
   }
 
   .nav-item {
     margin: 16px 0;
   }
 
-  .nav-menu-active {
+  .nav-menu.active {
     left: 0;
   }
 }
