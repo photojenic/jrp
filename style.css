@@ -1,7 +1,21 @@
-body {
+* {
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: lightseagreen;
+    border-bottom: 5px solid lightgray;
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(237, 239, 241);
+}
+
+li {
+    list-style: none;
 }
 
 a {
@@ -9,45 +23,60 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+
+/* a:hover {
     color: gray;
     text-decoration: none;
-}
+} */
 
-p,h2 {
+p, h2 {
     color: gray;
 }
 
-/* Navigation */
+h2 {
+    padding: 8px 0;
+}
 
-.site-header {
-    background-color: lightseagreen;
-    border-bottom: 5px solid lightgray;
-    padding: 0px 30px;
+/* Navigation and hamburger menu from https://www.youtube.com/watch?v=flItyHiDm7E */
+
+.navbar {
+    min-height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+    padding: 0 24px;
+}
 
 .nav-menu {
     display: flex;
-    height: 90px;
     font-size: 1.25rem;
-    padding: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 }
 
-
-.nav-menu-item {
-    margin: 10px;
-    color: #FFFFFF;
-    margin-top: 20px;
+.nav-link {
+    transition: 0.7s ease;
 }
 
-#hamburger-icon {
-    color: white;
+.nav-link:hover {
+    color: gray;
+}
+
+.hamburger {
     display: none;
-    text-decoration: none;
-  }
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
 
 /* Main content */
 
@@ -62,24 +91,24 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 5px solid lightgray;
+    border-bottom: 5px solid lightgray;
 }
 
 .motto-box p {
     display: block;
     color: white;
     font-style: italic;
+    font-size: 1.25rem;
+}
+
+.about-section {
+    padding: 20px 0;
 }
 
 /* Main - Hero banner slideshow */
 /* Got the code from https://www.w3schools.com/howto/howto_js_slideshow.asp */
 
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Verdana, sans-serif;
-}
 
 .mySlides {
     display: none;
@@ -173,18 +202,26 @@ img {
 
 footer {
     background-color: lightseagreen;
-}
-
-.flex-ctr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 5px solid lightgray;
+    height: 70px;
+    padding: 20px;
+  }
+  
+  .copyright {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-nav,
-footer {
-    grid-column: span 2;
-}
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
 
 /* Responsive design */
 
@@ -196,13 +233,42 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
     }
-    #hamburger-icon {
-        display: inline;
-      }
-    
-      .nav-menu-item {
-        display: none;
-      }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: lightseagreen;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu-active {
+        left: 0;
+    }
 }
 
 /* Tablet view */
@@ -212,11 +278,41 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
-    #hamburger-icon {
-        display: inline;
-      }
-    
-      .nav-menu-item {
-        display: none;
-      }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: lightseagreen;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu-active {
+        left: 0;
+    }
+
 }

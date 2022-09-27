@@ -1,42 +1,90 @@
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: #f1f1f1;
-  margin: 0;
-  font-family: Arial;
-}
-
-/* Navigation */
-
-nav {
-  display: flex;
-  height: 90px;
+header {
   background-color: lightseagreen;
-  flex-direction: row;
-  justify-content: space-between;
+  border-bottom: 5px solid lightgray;
 }
 
-section {
-  display: flex;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(237, 239, 241);
 }
 
-.nav-menu-item {
-  font-size: 20px;
-  margin: 10px;
+li {
+  list-style: none;
+}
+
+a {
   color: #FFFFFF;
+  text-decoration: none;
+}
+
+p, h2, h1 {
+  color: gray;
+}
+
+h1, h2 {
+  padding: 8px 0;
+}
+
+/* Navigation and hamburger menu from https://www.youtube.com/watch?v=flItyHiDm7E */
+
+.navbar {
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: flex;
+  font-size: 1.25rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: gray;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.active {
+  background-color: #717171;
 }
 
 /* Main area */
 
 main {
-  background-color: magenta;
+  background-color: whitesmoke;
   padding: 20px;
 }
 
 /* Main - responsive image grid from https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
-.header {
+.header-gallery {
   text-align: center;
   padding: 32px;
 }
@@ -66,133 +114,120 @@ main {
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
+
+/* Footer Area */
+
+footer {
+  background-color: lightseagreen;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 5px solid lightgray;
+  height: 70px;
+  padding: 20px;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Responsive mobile layout
+makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
   }
-}
 
-/* Main - Modal Image Popup window from https://www.w3schools.com/howto/howto_css_modal_images.asp */
+  .hamburger {
+    display: block;
+  }
 
-/* Style the Image Used to Trigger the Modal */
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
 
-#myImg:hover {opacity: 0.7;}
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 
-/* Modal Content (Image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 600px){
-  .modal-content {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: lightseagreen;
     width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu-active {
+    left: 0;
   }
 }
 
-/* Footer Area */
-
-footer {
-  background-color: teal;
-}
-
-.flex-ctr {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-nav,
-footer {
-  grid-column: span 2;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
+/* Responsive tablet layout
+makes a two column-layout instead of four columns */
+@media screen and (min-width: 600px) and (max-width: 800px) {
   .column {
-    width: 50%;
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
   }
-}
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: lightseagreen;
     width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu-active {
+    left: 0;
   }
 }

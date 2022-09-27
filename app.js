@@ -1,4 +1,19 @@
-// Hamburger Icon
+// Hamburger icon and responsive menu from https://www.youtube.com/watch?v=flItyHiDm7E 
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+// To remove mobile menu when a link is clicked
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active")
+    navMenu.classList.remove("active")
+}))
+
+// Hero banner slideshow from https://www.w3schools.com/howto/howto_js_slideshow.asp
 
 let slideIndex = 0;
 showSlides();

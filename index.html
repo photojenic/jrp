@@ -8,18 +8,29 @@
     <script defer src="app.js" charset="utf-8"></script>
     <title>Jen Reyes Photography</title>
 </head>
+
 <body>
-    <header class="site-header">
-    <div class="site-logo">
-        <a href="index.html"><img src="https://res.cloudinary.com/dpvznv961/image/upload/v1664061446/JRP/Logo/JRPgallerywatermark-white_sccjog.png" /></a>
-    </div>
-    <nav class="nav-menu">
-        <a href="#" id="hamburger-icon">&#9776;</a>
-            <p class="nav-menu-item"><a href="gallery.html">Gallery</a></p>
-            <p class="nav-menu-item"><a href="products.html">Products</a></p>
-            <p class="nav-menu-item"><a href="contact.html">Contact</a></p>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><img
+                    src="https://res.cloudinary.com/dpvznv961/image/upload/v1664061446/JRP/Logo/JRPgallerywatermark-white_sccjog.png"
+                    alt="jen reyes photography logo"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </header>
+
     <main>
         <!-- Hero banner slideshow container -->
         <!-- got the code from https://www.w3schools.com/howto/howto_js_slideshow.asp-->
@@ -52,29 +63,41 @@
             <span class="dot"></span>
             <span class="dot"></span>
         </div>
-        <p></p>
+        <p>&nbsp;</p>
         <section class="motto-box">
             <p>Every photo is created with love and stoke...</p>
         </section>
-
         <!-- Main text content-->
-        <h2>The Person Behind the Lens</h2>
-        <p>Jen Reyes is a water photographer specializing in beach, wave and surf photography.</p>
+        <section class="about-section">
+            <h2>The Person Behind the Lens</h2>
+            <p>Jen Reyes is a water photographer specializing in coastal/beach, sunset, surf, and wave photography.</p>
+        </section>
 
         <div class="main-wrapper">
-            <div class="main-one"><a href="#"><img src="https://res.cloudinary.com/dpvznv961/image/upload/v1664141778/JRP/Beachscape/Patrolling-IG_bvrhwt.jpg" alt="beachscape" width="100%"
-                        height="auto"></a></div>
-            <div class="main-two"><a href="#"><img src="https://res.cloudinary.com/dpvznv961/image/upload/v1664142358/JRP/Sunset/SEAcretswing_IG_gdvb5w.jpg" alt="sunsets" width="100%"
-                        height="auto"></a></div>
-            <div class="main-three"><a href="#"><img src="https://res.cloudinary.com/dpvznv961/image/upload/v1664142012/JRP/Surf/bwong_072215_8399_IG_wgam77.jpg" alt="surfing" width="100%"
-                        height="auto"></a></div>
-            <div class="main-four"><a href="#"><img src="https://res.cloudinary.com/dpvznv961/image/upload/v1664141389/JRP/Waves/heavyduty_SM_xapcvw.jpg" alt="waves" width="100%"
-                        height="auto"></a></div>
+            <div class="main-one"><a href="#"><img
+                        src="https://res.cloudinary.com/dpvznv961/image/upload/v1664141778/JRP/Beachscape/Patrolling-IG_bvrhwt.jpg"
+                        alt="beachscape" width="100%" height="auto"></a></div>
+            <div class="main-two"><a href="#"><img
+                        src="https://res.cloudinary.com/dpvznv961/image/upload/v1664142358/JRP/Sunset/SEAcretswing_IG_gdvb5w.jpg"
+                        alt="sunsets" width="100%" height="auto"></a></div>
+            <div class="main-three"><a href="#"><img
+                        src="https://res.cloudinary.com/dpvznv961/image/upload/v1664142012/JRP/Surf/bwong_072215_8399_IG_wgam77.jpg"
+                        alt="surfing" width="100%" height="auto"></a></div>
+            <div class="main-four"><a href="#"><img
+                        src="https://res.cloudinary.com/dpvznv961/image/upload/v1664141389/JRP/Waves/heavyduty_SM_xapcvw.jpg"
+                        alt="waves" width="100%" height="auto"></a></div>
         </div>
     </main>
 </body>
-<footer class="flex-ctr">
-    <p style="color: white;">© 2022 Jen Reyes Photography</p>
-</footer>
+<footer>
+    <div class="copyright">
+        <p style="color: white;">© 2022 Jen Reyes Photography</p>
+        </div>
+        <div class="social-media">
+            <p><a href="https://facebook.com/jenreyesphotography" target="_blank"><img src="https://res.cloudinary.com/dpvznv961/image/upload/v1664246376/JRP/icons/facebook-white-icon_t65zro.png"></a></p>
+            <p><a href="https://instagram.com/iamphotojenic" target="_blank"><img src="https://res.cloudinary.com/dpvznv961/image/upload/v1664246376/JRP/icons/instagram-white-icon_e7r9ud.png"></a></p>
+            <p><a href="mailto:jenreyesphoto@gmail.com"><img src="https://res.cloudinary.com/dpvznv961/image/upload/v1664246905/JRP/icons/mail-white-icon_tlmo2m.png"></a></p>
+        </div>
+    </footer>
 
 </html>
