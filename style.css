@@ -192,9 +192,8 @@ img {
     gap: 10px;
 }
 
-.main-one, .main-two, .main-three {
-    background-color: gray;
-    padding: 5px;
+.main-one, .main-two, .main-three, .main-four {
+    padding: 10px;
 }
 
 
