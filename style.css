@@ -56,6 +56,19 @@ main {
     padding: 20px;
 }
 
+.motto-box {
+    background-color: cadetblue;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.motto-box p {
+    display: block;
+    color: white;
+    font-style: italic;
+}
 
 /* Main - Hero banner slideshow */
 /* Got the code from https://www.w3schools.com/howto/howto_js_slideshow.asp */
@@ -159,7 +172,7 @@ img {
 /* Footer Area */
 
 footer {
-    background-color: teal;
+    background-color: lightseagreen;
 }
 
 .flex-ctr {

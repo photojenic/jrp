@@ -1,5 +1,4 @@
-// Hero banner slideshow
-// Got code from https://www.w3schools.com/howto/howto_js_slideshow.asp
+// Hamburger Icon
 
 let slideIndex = 0;
 showSlides();
