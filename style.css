@@ -11,7 +11,7 @@ header {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(237, 239, 241);
+    background-color: whitesmoke;
 }
 
 li {
@@ -31,10 +31,12 @@ a {
 
 p, h1, h2 {
     color: gray;
+    line-height: 1.7em;
 }
 
-h1, h2 {
+h1, h2, {
     padding: 8px 0;
+    font-size: 2rem;
 }
 
 /* Navigation and hamburger menu from https://www.youtube.com/watch?v=flItyHiDm7E */
@@ -82,10 +84,9 @@ h1, h2 {
 
 main {
     background-color: whitesmoke;
-    padding: 20px;
 }
 
-.motto-box {
+#motto-box {
     background-color: cadetblue;
     height: 60px;
     display: flex;
@@ -95,15 +96,21 @@ main {
     border-bottom: 5px solid lightgray;
 }
 
-.motto-box p {
+#motto-box p {
     display: block;
     color: white;
     font-style: italic;
     font-size: 1.25rem;
 }
 
-.about-section {
-    padding: 20px 0;
+#about-section, #contact {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#contact a {
+   color: cadetblue
 }
 
 /* Main - Hero banner slideshow */
@@ -123,6 +130,8 @@ img {
     max-width: 1000px;
     position: relative;
     margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 /* Caption text */
@@ -305,6 +314,7 @@ footer {
         width: 100%;
         text-align: center;
         transition: 0.3s;
+        z-index: 2000;
     }
 
     .nav-item {
