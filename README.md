@@ -5,12 +5,10 @@ This is my final project for General Assembly's Front End Web Development 10-wee
 
 
 ## Overview
----
 This website is a passion project of mine to showcase my photography work and now my front end development coding skills!
 
 
 ## What I have demonstated
----
 1. Make a website responsive
 2. Create a hamburger icon and developed a mobile/tablet view navigation menu
 3. Create a slideshow
@@ -19,17 +17,14 @@ This website is a passion project of mine to showcase my photography work and no
 6. Use flex and grid properties
 
 ## Challenge that I've faced and overcame
----
 How to make a hamburger icon clickable.  This took me 2 days to figure this out without raising the white flag to ask for help!
 
 ## What I still need to practice on
----
 1. Javascript
 2. Javascript
 3. And more javascript
 
 ## Credits
----
 Here are a few resources that I would like to give credit to in helping me creating my final project:
 
 * My GA instructors: Ben, Paula, and Steve. Thank you so much for your lessons, guidance/advice, assistance, and patience!
