@@ -230,9 +230,9 @@ img {
   
   .text {
     color: white;
-    font-size: 50px;
+    font-size: 25px;
     position: absolute;
-    top: 58%;
+    top: 60%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
