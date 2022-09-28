@@ -29,7 +29,7 @@ Here are a few resources that I would like to give credit to in helping me creat
 
 * My GA instructors: Ben, Paula, and Steven. Thank you so much for your lessons, guidance/advice, assistance, and patience!
 * A few of my fellow GA course mates: EJ, Liz, and Nick.  Thank you for your support, friendships, peer reviews and laughing moments!
-* W3Schools - [How to Create an Automatic Slideshow / Carousel](https://www.w3schools.com/howto/howto_js_slideshow.asp) and [How to Create a Responsive Design Grid](https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp)
+* W3Schools - [How to Create an Automatic Slideshow / Carousel](https://www.w3schools.com/howto/howto_js_slideshow.asp), [How to Image Hover Overlay](https://www.w3schools.com/howto/howto_css_image_overlay.asp) and [How to Create a Responsive Design Grid](https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp)
 * YouTuber [Codefoxx](https://www.youtube.com/c/codefoxx) - [How to Create a Responsive Hamburger Menu with HTML, CSS, & JavaScript](https://www.youtube.com/watch?v=flItyHiDm7E)
 * [Icons8](https://icons8.com/) for free social media and email icons
 

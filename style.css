@@ -206,6 +206,40 @@ img {
     padding: 10px;
 }
 
+/* Image Hover Overlay from https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+.container {
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: gray;
+  }
+  
+  .container:hover .overlay {
+    opacity: .8;
+  }
+  
+  .text {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
 
 /* Footer Area */
 
