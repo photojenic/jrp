@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    }
+
 header {
     background-color: lightseagreen;
     border-bottom: 5px solid lightgray;
@@ -55,6 +59,7 @@ h1, h2, {
     justify-content: space-between;
     align-items: center;
     gap: 40px;
+    border: #FFFFFF;
 }
 
 .nav-link {
