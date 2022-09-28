@@ -5,7 +5,7 @@ This is my final project for General Assembly's Front End Web Development 10-wee
 
 
 ## Overview
-This website is a passion project of mine to showcase my photography work and now my front end development coding skills!
+This website is a passion project of mine to showcase my photography work and now my front end development coding skills utilizing HTML5, CSS and Javascript!
 
 
 ## What I have demonstated
