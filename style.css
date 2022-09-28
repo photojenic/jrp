@@ -28,14 +28,15 @@ a {
 }
 
 
-/* a:hover {
+a:hover {
     color: gray;
     text-decoration: none;
-} */
+}
 
 p, h1, h2 {
     color: gray;
-    line-height: 1.7em;
+    line-height: 1.6em;
+    padding: 5px;
 }
 
 h1, h2, {
@@ -63,10 +64,6 @@ h1, h2, {
 
 .nav-link {
     transition: 0.7s ease;
-}
-
-.nav-link:hover {
-    color: gray;
 }
 
 .hamburger {
