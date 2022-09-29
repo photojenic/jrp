@@ -1,7 +1,7 @@
 # GA FEWD Final Project: Jen Reyes Photography
 
 
-This is my final project for General Assembly's Front End Web Development 10-week course.
+This is my final project for [General Assembly: Online Front-End Web Development Course](https://generalassemb.ly/education/front-end-web-development-remote-online).
 
 
 ## Overview
