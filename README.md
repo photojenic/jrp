@@ -27,6 +27,7 @@ How to make a hamburger icon clickable.  This took me 2 days to figure this out 
 ## Future features to add onto the website
 1. Create a modal image on all my photo images
 2. How to disable right-clicking on my photo images to prevent users from saving the actual image file (if possible)
+3. Create a contact form with a functional submit button that sends the data to my email
 
 ## Credits
 Here are a few resources that I would like to give credit to in helping me creating my final project:
